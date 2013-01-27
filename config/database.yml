@@ -3,6 +3,8 @@ development:
   encoding: unicode
   database: store_development
   pool: 5
+  username: jaime
+  password: root
   host: localhost
 
 test:
@@ -10,6 +12,8 @@ test:
   encoding: unicode
   database: store_test
   pool: 5
+  username: jaime
+  password: root
   host: localhost
 
 production:
@@ -17,4 +21,6 @@ production:
   encoding: unicode
   database: store_production
   pool: 5
+  username: jaime
+  password: root
   host: localhost
