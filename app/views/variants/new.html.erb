@@ -1,0 +1,12 @@
+<h1>New Variant</h1>
+<%= form_for ['product', @variant] do |f| %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <span class='error'><%= @variant.errors[:color].join(', ') %></span>
+  <br/>
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+  <span class='error'><%= @variant.errors[:size].join(', ') %></span>
+  <br/>
+  <%= f.submit 'Save' %>
+<% end %>
